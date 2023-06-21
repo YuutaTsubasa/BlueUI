@@ -3,7 +3,7 @@
 
     const arrowDistance = "13px"
     const colorSature = "45%";
-    $: backgroundColor = `hsl(${colorHue}, ${colorSature}, 50%)`;
+    $: backgroundColor = colorHue !== undefined ? `hsl(${colorHue}, ${colorSature}, 50%)` : `rgb(50, 50, 50)`;
 </script>
 
 <div class="relative box-border flex items-center z-[2] text-[white] py-0"

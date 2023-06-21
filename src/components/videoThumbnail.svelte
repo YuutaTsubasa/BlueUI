@@ -1,6 +1,6 @@
 <script>
     import InformationBar from "./informationBar.svelte";
-import Tag from "./tag.svelte";
+    import Tag from "./tag.svelte";
 
     export let backgroundImageUrl;
     export let logoUrl;
@@ -42,10 +42,10 @@ import Tag from "./tag.svelte";
                     </section>
                     <div class="absolute flex w-full h-full items-center pl-20 gap-5">
                         <div class="w-[15%] h-full flex items-center z-20 ml-10">
-                            <img src="images/logoIcon.png" alt="Logo" class="w-[100%]"/>
+                            <img src="/images/logoIcon.png" alt="Logo" class="w-[100%]"/>
                         </div>
                         <div class="grid grid-rows-[1fr_2fr] w-full h-full italic text-left text-white z-20">
-                            <div class="flex items-center border-b-2 border-dashed border-[rgba(255,255,255,0.7)] text-2xl py-1 w-full">
+                            <div class="flex items-center border-b-2 border-dashed border-[rgba(255,255,255,0.7)] text-3xl py-2 w-full">
                                 <slot name="subtitle"></slot>
                             </div>
                             <div class="flex items-center text-7xl w-full">
@@ -64,9 +64,11 @@ import Tag from "./tag.svelte";
                     {/if}
                 </div>
                 <div class="flex justify-end items-end">
-                    {#if vtuberImageUrl}
-                        <img src={vtuberImageUrl} alt="Vtuber" class="w-[400px] max-w-[200%]"/>
-                    {/if}
+                    <div class="w-full h-[450px]">
+                        {#if vtuberImageUrl}
+                            <img src={vtuberImageUrl} alt="Vtuber" class="h-full max-w-none -ml-[30%]"/>
+                        {/if}
+                    </div>
                 </div>
             </div>
             <footer class="absolute box-border pl-[250px] bottom-0 grid grid-cols-2 items-center justify-between w-full h-[150px]">
