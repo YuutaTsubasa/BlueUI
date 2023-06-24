@@ -1,4 +1,6 @@
 <script>
+    import { slide } from 'svelte/transition';
+    import { quintOut } from 'svelte/easing';
     import ListItem from "./listItem.svelte";
 
     export let items;
