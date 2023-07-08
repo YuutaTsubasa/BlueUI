@@ -67,4 +67,4 @@
     };
 </script>
 
-<WeeklySchedule items={items} cover={cover}></WeeklySchedule>
+<WeeklySchedule items={items} cover={cover} weekNumber=100></WeeklySchedule>

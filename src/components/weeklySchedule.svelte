@@ -3,6 +3,7 @@
     import { quintOut } from 'svelte/easing';
     import ListItem from "./listItem.svelte";
 
+    export let weekNumber;
     export let items;
     export let cover;
 </script>
@@ -17,7 +18,7 @@
             <div class="flex gap-5">
                 <h1 class="text-white text-8xl items-center">SCHEDULE</h1>
                 <h2 class="grid grid-rows-2 items-end mt-5 mb-3">
-                    <span class="text-white text-2xl border-b-white border-b-2 flex items-end justify-center">Week 100</span>
+                    <span class="text-white text-2xl border-b-white border-b-2 flex items-end justify-center">Week {weekNumber}</span>
                     <span class="text-white text-xl flex items-end">本週行事曆</span>
                 </h2>
             </div>

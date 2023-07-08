@@ -25,7 +25,7 @@
          style="{backgroundImageUrl ? `background-image: url("${backgroundImageUrl}")` : "background-color: rgb(200, 200, 200)"}">
     <section class="box-border w-full h-full grid grid-rows-[28%_1fr] backdrop-brightness-75 backdrop-blur-sm">
         <header class="relative w-full">
-            <section class="absolute w-full h-full bg-[position:50%_25%] grayscale z-0" style="background-image: url('images/videoThumbnail/headerBackground.png')">
+            <section class="absolute w-full h-full bg-[position:50%_25%] grayscale z-0" style="background-image: url('/images/videoThumbnail/headerBackground.png')">
             </section>
             <section class="absolute w-full h-full bg-gradient-to-r {categoryColor + "Gradient"} z-10 opacity-75 bg-blend-color-burn">
             </section>
@@ -64,9 +64,9 @@
                     {/if}
                 </div>
                 <div class="flex justify-end items-end">
-                    <div class="w-full h-[450px]">
+                    <div class="w-full h-[450px] flex justify-center">
                         {#if vtuberImageUrl}
-                            <img src={vtuberImageUrl} alt="Vtuber" class="h-full max-w-none -ml-[30%]"/>
+                            <img src={vtuberImageUrl} alt="Vtuber" class="h-full max-w-none"/>
                         {/if}
                     </div>
                 </div>
