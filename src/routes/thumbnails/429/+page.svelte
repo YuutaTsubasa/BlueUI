@@ -13,5 +13,5 @@
   portraitImageUrl="/images/videoThumbnail/headerBackground.png"
   volumeNumber=429>
   <span slot="subtitle">Problem 98. ~ Problem 107.</span>
-  <span slot="title">LeetCode <span class="text-4xl">#16</span></span>
+  <span slot="title">LeetCode <span class="sub-font">#16</span></span>
 </VideoThumbnail>

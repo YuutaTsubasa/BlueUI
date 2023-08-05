@@ -38,7 +38,7 @@
     </div>
     <div class="relative bg-[rgba(0,0,0,0.3)] h-full flex items-center justify-center z-1">
         <div class="absolute w-full h-full z-2 grayscale bg-cover bg-no-repeat bg-center bg-blend-multiply blur-sm bg-[rgba(0,0,0,0.5)]" style="background-image: url('{coverImageUrl}')"></div>
-        <div class="h-full flex items-center justify-center scale-125">
+        <div class="h-full flex items-center justify-center scale-110">
             {#if item.tags.length > 0}
                 {#each item.tags as tag}
                     <Tag colorHue={tag.colorHue}><span slot="tagName">{tag.name}</span></Tag>
@@ -67,5 +67,6 @@
 
     * {
         font-family: 'Roboto Condensed', 'Noto Sans TC';
+        font-weight: 700;
     }
 </style>

@@ -45,10 +45,10 @@
                             <img src="/images/logoIcon.png" alt="Logo" class="w-[100%]"/>
                         </div>
                         <div class="grid grid-rows-[1fr_2fr] w-full h-full italic text-left text-white z-20">
-                            <div class="flex items-center border-b-2 border-dashed border-[rgba(255,255,255,0.7)] text-3xl py-2 w-full">
+                            <div class="thin-font flex items-center border-b-2 border-dashed border-[rgba(255,255,255,0.7)] text-3xl py-2 w-full font-extrabold">
                                 <slot name="subtitle"></slot>
                             </div>
-                            <div class="flex items-center text-7xl w-full">
+                            <div class="thin-font flex items-center text-7xl w-full">
                                 <slot name="title"></slot>
                             </div>
                         </div>
@@ -132,5 +132,83 @@
 
     * {
         font-family: 'Roboto Condensed', 'Noto Sans TC';
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: thinFont;
+        src: url("/fonts/GlowSansTC-Compressed-Bold.otf");
+    }
+
+    :global(.sub-font) {
+        /* @apply text-3xl; */
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    :global(.two-line-font) {
+        @apply text-7xl;
+        font-size: 2.75rem;
+        line-height: 1;
+    }
+
+    :global(.two-line-font .sub-font) {
+        font-size: 1.5rem;
+        line-height: 0.5rem;
+    }
+
+    .thin-font { 
+        font-family: 'Roboto Condensed', thinFont;
+        --color: black;
+        --size: 0.08rem;
+        text-shadow: 2px 2px 6px black;
+        /* font-weight: lighter !important; */
+
+        /* text-shadow:
+            calc(var(--size) * -1) calc(var(--size) * -1) 0 var(--color),
+            0        calc(var(--size) * -1) 0 var(--color),
+            var(--size) calc(var(--size) * -1) 0 var(--color),
+            var(--size)  0        0 var(--color),
+            var(--size)  var(--size) 0 var(--color),
+            0         var(--size) 0 var(--color),
+            calc(var(--size) * -1)  var(--size) 0 var(--color),
+            calc(var(--size) * -1)  0        0 var(--color);  */
+        /* -webkit-text-stroke: 0.05rem black; */
+        
+        /* font-family: "twroadfont-1.0";
+        font-weight: bolder;
+        --color: black;
+        --size: 0.06rem;
+        text-shadow:
+            calc(var(--size) * -1) calc(var(--size) * -1) 0 var(--color),
+            0        calc(var(--size) * -1) 0 var(--color),
+            var(--size) calc(var(--size) * -1) 0 var(--color),
+            var(--size)  0        0 var(--color),
+            var(--size)  var(--size) 0 var(--color),
+            0         var(--size) 0 var(--color),
+            calc(var(--size) * -1)  var(--size) 0 var(--color),
+            calc(var(--size) * -1)  0        0 var(--color); */
+
+        /* font-family: "AR FangXinShuH7C80DB5";  */
+        /* -webkit-text-stroke: 0.05rem black;  */
+        
+        /* font-family: "AR SYSongB5HK H32C80";  */
+        /* -webkit-text-stroke: 0.05rem black;  */
+
+        /* font-family: "AR UDJingXiHeiE1C80B5HK";  */
+        letter-spacing: 0.5pt;
+        font-weight: 900;
+        /* --color: black;
+        --size: 0.08rem;
+        text-shadow:
+            calc(var(--size) * -1) calc(var(--size) * -1) 0 var(--color),
+            0        calc(var(--size) * -1) 0 var(--color),
+            var(--size) calc(var(--size) * -1) 0 var(--color),
+            var(--size)  0        0 var(--color),
+            var(--size)  var(--size) 0 var(--color),
+            0         var(--size) 0 var(--color),
+            calc(var(--size) * -1)  var(--size) 0 var(--color),
+            calc(var(--size) * -1)  0        0 var(--color); */
+            
     }
 </style>

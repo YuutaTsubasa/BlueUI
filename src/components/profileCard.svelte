@@ -71,5 +71,6 @@ import Tag from "./tag.svelte";
 <style>
     * {
         font-family: 'Roboto Condensed', 'Noto Sans TC';
+        font-weight: 700;
     }
 </style>

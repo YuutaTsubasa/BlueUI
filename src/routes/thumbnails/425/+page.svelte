@@ -13,5 +13,5 @@
   portraitImageUrl="/images/videoThumbnail/headerBackground.png"
   volumeNumber=425>
   <span slot="subtitle">敵方血量條做完了，接下來該做什麼好呢？</span>
-  <span slot="title"><span class="text-4xl">嘗試用 </span>Unity <span class="text-4xl">製作 </span>動作遊戲 <span class="text-4xl">#5</span></span>
+  <span slot="title"><span class="sub-font">嘗試用 </span>Unity <span class="sub-font">製作 </span>動作遊戲 <span class="sub-font">#5</span></span>
 </VideoThumbnail>

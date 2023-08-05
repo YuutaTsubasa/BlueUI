@@ -13,5 +13,5 @@
   portraitImageUrl="/images/videoThumbnail/headerBackground.png"
   volumeNumber=430>
   <span slot="subtitle">一小時玩遊戲系列復活！</span>
-  <span slot="title">失落史詩 LOST EPIC <span class="text-4xl">#1</span>
+  <span slot="title">失落史詩 LOST EPIC <span class="sub-font">#1</span></span>
 </VideoThumbnail>

@@ -13,5 +13,5 @@
     portraitImageUrl="/images/videoThumbnail/headerBackground.png"
     volumeNumber=423>
     <span slot="subtitle">來複習一些以前唱過的 V 家歌曲吧！</span>
-    <span slot="title">VOCALOID 歌回 <span class="text-4xl">2023.06.18</span></span>
+    <span slot="title">VOCALOID 歌回 <span class="sub-font">2023.06.18</span></span>
 </VideoThumbnail>

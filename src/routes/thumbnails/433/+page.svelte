@@ -13,5 +13,5 @@ vtuberImageUrl="/images/videos/vtubers/vtuber-2.0.png"
 portraitImageUrl="/images/videoThumbnail/headerBackground.png"
 volumeNumber=433>
 <span slot="subtitle">Problem 108. ~ Problem 115.</span>
-<span slot="title">LeetCode <span class="text-4xl">#17</span></span>
+<span slot="title">LeetCode <span class="sub-font">#17</span></span>
 </VideoThumbnail>

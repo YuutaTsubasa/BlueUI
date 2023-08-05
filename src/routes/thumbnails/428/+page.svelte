@@ -13,5 +13,5 @@
   portraitImageUrl="/images/videoThumbnail/headerBackground.png"
   volumeNumber=428>
   <span slot="subtitle">複習之前做的東西，並且擷取 Twitch 的聊天室</span>
-  <span slot="title">直播聊天室擷取程式 <span class="text-4xl">#7</span></span>
+  <span slot="title">直播聊天室擷取程式 <span class="sub-font">#7</span></span>
 </VideoThumbnail>

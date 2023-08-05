@@ -13,5 +13,5 @@
   portraitImageUrl="/images/videoThumbnail/headerBackground.png"
   volumeNumber=424>
   <span slot="subtitle">大賽結束後，該來拔樁了......</span>
-  <span slot="title">寶可夢 朱 <span class="text-4xl">#9</span></span>
+  <span slot="title">寶可夢 朱 <span class="sub-font">#9</span></span>
 </VideoThumbnail>

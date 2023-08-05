@@ -13,5 +13,5 @@
   portraitImageUrl="/images/videoThumbnail/headerBackground.png"
   volumeNumber=431>
   <span slot="subtitle">來一起聊聊天吧！</span>
-  <span slot="title">六月總結雜談 <span class="text-4xl">2023.07.01</span>
+  <span slot="title">六月總結雜談 <span class="sub-font">2023.07.01</span>
 </VideoThumbnail>

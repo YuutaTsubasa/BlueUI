@@ -13,5 +13,5 @@
   portraitImageUrl="/images/videoThumbnail/headerBackground.png"
   volumeNumber=427>
   <span slot="subtitle">繼續體驗 Game Gear 的遊戲</span>
-  <span slot="title">Sonic Origins Plus <span class="text-4xl">#2</span></span>
+  <span slot="title">Sonic Origins Plus <span class="sub-font">#2</span></span>
 </VideoThumbnail>
