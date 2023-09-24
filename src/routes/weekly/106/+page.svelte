@@ -22,7 +22,7 @@
         return [year, month, day].join('.');
     }
 
-    const startDate = Date.parse("2023-07-24");
+    const startDate = Date.parse("2023-07-31");
     const items = [
         {
             date: startDate,
@@ -62,7 +62,7 @@
         {
             date: addDays(startDate, 5),
             time: "21:30",
-            name: `Sonic Origins Plus <span class="text-2xl">#7</span>`,
+            name: `Rhythm Sprout <span class="text-2xl">#1</span>`,
             category: "Game",
             tags: [data.tagList[0]] 
         },

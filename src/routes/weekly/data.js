@@ -16,6 +16,13 @@ const data = {
     {
       name: "雜談",
       colorHue: 124
+    },
+    {
+      name: "繪圖",
+      colorHue: 350
+    },
+    {
+      name: "影片"
     }
   ]
 };

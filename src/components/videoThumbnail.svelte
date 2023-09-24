@@ -1,6 +1,7 @@
 <script>
     import InformationBar from "./informationBar.svelte";
     import Tag from "./tag.svelte";
+    import { page } from '$app/stores';
 
     export let backgroundImageUrl;
     export let logoUrl;
@@ -15,10 +16,13 @@
         "Game": "red",
         "Code": "orange",
         "Sing": "blue",
-        "Talk": "green"
+        "Talk": "green",
+        "3D": "cyan",
+        "Draw": "pink"
     };
 
     $: categoryColor = categoryToColor[category] ?? "gray"
+    $: number = $page.url.pathname.split("/").findLast(value => value != "");
 </script>
 
 <section class="box-border w-[1200px] aspect-[calc(1920_/_1080)] bg-gray-900 mx-auto bg-cover overflow-hidden"
@@ -88,13 +92,13 @@
             style="{portraitImageUrl ? `background-image: url("${portraitImageUrl}")` : ""};">
             <div class="overflow-hidden w-full relative">
                 <span class="absolute bottom-3 right-[110%] w-max rotate-90 origin-bottom-right text-[60pt] text-right whitespace-nowrap text-[rgba(255,255,255,0.2)] italic">
-                    VOL. {volumeNumber}
+                    VOL. {volumeNumber ?? number}
                 </span>
                 <span class="absolute bottom-4 right-[110%] w-max rotate-90 origin-bottom-right text-[60pt] text-right whitespace-nowrap text-[rgba(255,255,255,0.3)] italic">
-                    VOL. {volumeNumber}
+                    VOL. {volumeNumber ?? number}
                 </span>
                 <span class="absolute bottom-5 right-[110%] w-max rotate-90 origin-bottom-right text-[60pt] text-right whitespace-nowrap {categoryColor + "Font"} mix-blend-multiply italic">
-                    VOL. {volumeNumber}
+                    VOL. {volumeNumber ?? number}
                 </span>
             </div>
             <!-- <div class="flex items-center justify-between bg-[rgba(255,255,255,0.7)] px-2.5 py-0">
@@ -108,7 +112,7 @@
                     <img src={logoUrl} alt="Logo" class="h-[100px]"/>
                 </div>
                 <div class="text-center text-[2.0em] font-[bolder]">
-                    VOL. <span class="text-[2em]">{volumeNumber}</span>
+                    VOL. <span class="text-[2em]">{volumeNumber ?? number}</span>
                 </div>
 
             </div>
@@ -118,14 +122,18 @@
 
 <style>
     .redGradient { @apply from-red-500 to-red-900; }
+    .pinkGradient { @apply from-pink-500 to-pink-900; }
     .orangeGradient { @apply from-orange-500 to-orange-900; }
+    .cyanGradient { @apply from-cyan-500 to-cyan-900; }
     .blueGradient { @apply from-blue-500 to-blue-900; }
     .greenGradient { @apply from-green-500 to-green-900; }
     .grayGradient { @apply from-gray-500 to-gray-900; }
 
 
     .redFont { @apply text-red-500; }
+    .pinkFont { @apply text-pink-500; }
     .orangeFont { @apply text-orange-500; }
+    .cyanFont { @apply text-cyan-500; }
     .blueFont { @apply text-blue-500; }
     .greenFont { @apply text-green-500; }
     .grayFont { @apply text-gray-500; }

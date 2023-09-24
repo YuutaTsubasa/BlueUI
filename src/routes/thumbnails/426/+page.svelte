@@ -8,7 +8,7 @@
   tagList={[data.tagList[0]]}
   backgroundImageUrl="/images/videos/426/background.jpeg"
   logoUrl="/images/logo.png"
-  contentLogoUrl=""
+  contentLogoUrl="/images/videos/contentLogos/game_sonic_origins_plus_logo.png"
   vtuberImageUrl="/images/videos/vtubers/vtuber-2.0.png"
   portraitImageUrl="/images/videoThumbnail/headerBackground.png"
   volumeNumber=426>
