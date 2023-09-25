@@ -4,13 +4,13 @@
 </script>
 
 <VideoThumbnail 
-    category="Code"
-    tagList={[data.tagList[1]]}
-    backgroundImageUrl="/images/videos/483/background.png"
+    category="Talk"
+    tagList={[data.tagList[3]]}
+    backgroundImageUrl="/images/videos/431/background.png"
     logoUrl="/images/logo.png"
-    contentLogoUrl="/images/videos/contentLogos/code_godot_engine_logo.png"
-    vtuberImageUrl="/images/videos/vtubers/vtuber-3.0-b.PNG"
+    contentLogoUrl="/images/videos/contentLogos/talk_logo.png"
+    vtuberImageUrl="/images/videos/vtubers/vtuber-custom-half.png"
     portraitImageUrl="/images/videoThumbnail/headerBackground.png">
-    <span slot="subtitle">來嘗試做上次說的打字競速遊戲</span>
-    <span slot="title">Godot Engine 探索 <span class="sub-font">#04</span></span>
+    <span slot="subtitle">從用向量繪圖畫線到一般繪圖上色，最後套 Live2D 模板的成果展示</span>
+    <span slot="title">自繪自製 Live2D 成果雜談</span>
 </VideoThumbnail>

@@ -13,7 +13,7 @@
 <section class="w-[var(--width)] h-[var(--height)] aspect-[var(--aspect-ratio)] mx-auto justify-center
                 bg-cover bg-center"
          style="--width: 1200px; --aspect-ratio: calc(1920 / 1080); --height: calc(var(--width) / var(--aspect-ratio));
-                background-image: url('/images/schedule/background.png')">
+                background-image: url('{cover.imageUrl}')">
     <div class="w-[var(--width)] h-[var(--height)] aspect-[var(--aspect-ratio)] backdrop-brightness-50 backdrop-blur-sm
                 grid grid-rows-[1fr_7fr] justify-center">
         <header class="flex gap-5 m-3 justify-between border-b-2 border-b-white w-[calc(0.95_*_var(--width))]">
@@ -36,8 +36,9 @@
             </section>
             <section class="bg-gray-700 mt-2 mb-7 mx-2 bg-cover bg-center flex flex-row items-end justify-center"
                      style="background-image: url('{cover.imageUrl}')">
-                
+                {#if cover.artist}
                 <div class="bg-[rgba(0,0,0,0.5)] w-full h-10 text-white text-xl flex items-center justify-center">封面繪師：{cover.artist}</div>
+                {/if}
             </section>
         </section>
     </div>
