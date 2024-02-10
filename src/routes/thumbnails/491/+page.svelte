@@ -5,7 +5,7 @@
 
 <VideoThumbnail 
     category="Sing"
-    tagList={[data.tagList[2]]}
+    tagList={[data.tagList[21]]}
     backgroundImageUrl="/images/videos/423/background.png"
     logoUrl="/images/logo.png"
     contentLogoUrl="/images/videos/contentLogos/sing_logo.png"

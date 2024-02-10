@@ -156,8 +156,13 @@
 
     :global(.two-line-font) {
         @apply text-7xl;
-        font-size: 2.75rem;
-        line-height: 1;
+        font-size: 3.2rem;
+        line-height: 2rem;
+    }
+
+    :global(.two-line-font .sub-num-font) {
+        font-size: 2rem;
+        line-height: 0.5rem;
     }
 
     :global(.two-line-font .sub-font) {
